@@ -5,31 +5,31 @@
    "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Registration Form</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Регистрация</title>
 </head>
 <body>
-    <h1>Registration Form</h1>
+    <h1>Регистрация</h1>
     <form action="register" method="post">
         <table cellpadding="3pt">
             <tr>
-                <td>User Name :</td>
+                <td>Логин :</td>
                 <td><input type="text" name="login" size="30" /></td>
             </tr>
             <tr>
-                <td>Password :</td>
+                <td>Пароль :</td>
                 <td><input type="password" name="password" size="30" /></td>
             </tr>
             <tr>
-                <td>email :</td>
+                <td>Email :</td>
                 <td><input type="text" name="email" size="30" /></td>
             </tr>
             <tr>
-                <td>Phone :</td>
+                <td>Имя :</td>
                 <td><input type="text" name="name" size="30" /></td>
             </tr>
             <tr>
-                <td>City :</td>
+                <td>Фамилия :</td>
                 <td><input type="text" name="surname" size="30" /></td>
             </tr>
         </table>
