@@ -11,17 +11,17 @@ import bean.Account;
 public class AccountDAO extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;
+	
+	static Configuration configuration = new Configuration().configure();
+	static SessionFactory sessionFactory = configuration.buildSessionFactory();
+	static Session session = sessionFactory.openSession();
+	static Transaction transaction = session.beginTransaction();
 
 	public void addAccountDetails(String login, String password, String email,
             String name, String surname) 
     {
         try 
         {
-            Configuration configuration = new Configuration().configure();
-            SessionFactory sessionFactory = configuration.buildSessionFactory();
-            Session session = sessionFactory.openSession();
-            Transaction transaction = session.beginTransaction();
-            
             Account account = new Account();
             account.setLogin(login);
             account.setPassword(password);
@@ -39,6 +39,11 @@ public class AccountDAO extends HttpServlet
             System.out.println(e.getMessage());
             System.out.println("error");
         }
+        finally
+        {
+        	session.close();
+        	sessionFactory.close();
+		}
  
     }
  

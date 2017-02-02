@@ -22,7 +22,7 @@
 	
 	<servlet>
 		<servlet-name>LoginServlet</servlet-name>
-		<servlet-class>controller.LoginServlet</servlet-class>
+		<servlet-class>controller.LoginControllerServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>

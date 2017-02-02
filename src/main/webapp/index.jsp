@@ -9,11 +9,11 @@
         <table>
             <tr>
                 <td>Логин :</td>
-                <td><input type="text" name="login" size="30" /></td>
+                <td><input type="text" name="loginLog" size="30" /></td>
             </tr>
             <tr>
                 <td>Пароль :</td>
-                <td><input type="password" name="password" size="30" /></td>
+                <td><input type="password" name="passwordLog" size="30" /></td>
             </tr>
         </table>
         <p />
