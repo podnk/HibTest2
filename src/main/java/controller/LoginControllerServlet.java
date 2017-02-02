@@ -18,24 +18,27 @@ public class LoginControllerServlet extends HttpServlet
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException
 	{
+		req.setCharacterEncoding("UTF-8");
+		resp.setCharacterEncoding("UTF-8");
+		resp.setContentType("text/html;charset=UTF-8");
+    	
 		String login = req.getParameter("loginLog");
 		String password = req.getParameter("passwordLog");
 		
 		HttpSession session = req.getSession(true);
+		
+		session.setAttribute("login", login);
+		session.setAttribute("password", password);
 		
 		LoginService logService = new LoginService();
 		
 		boolean result = logService.authenticateAccount(login, password);
 		
 		Account account = logService.getAccountByLogin(login);
-		System.out.println(1);
 		if (result == true)
 		{
-			System.out.println(2);
 			req.getSession().setAttribute("account", account);
-			System.out.println(3);
 			resp.sendRedirect("accountPage.jsp");
-			System.out.println(4);
 		}
 		else 
 		{
