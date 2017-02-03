@@ -9,6 +9,10 @@
 		String login = (String)session.getAttribute("login");
 		String password = (String)session.getAttribute("login");
 		
+		if(session.getAttribute("login") == null || session.getAttribute("password") == null)
+		{
+			response.sendRedirect("wrong.jsp");
+		}
 	%>
 <html>
 <head>

@@ -6,37 +6,57 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-	<p>СОДЕРЖАНИЕ</p>
+	<p>Содержание</p>
 
-	<table width="500" border="1" cellpadding="3" cellspacing="0">
-		<caption>Список товаров</caption>
-		<tr>
-			<th><img
-				src="https://pp.vk.me/c836220/v836220617/1e88c/XmWdtOvFV1Q.jpg"
-				alt="tv"></th>
-			<th><img
-				src="https://pp.vk.me/c836220/v836220617/1e885/o3fCjm6qx9E.jpg"
-				alt="phone"></th>
-			<th><img
-				src="https://pp.vk.me/c836220/v836220617/1e87e/ewihQtMn2iA.jpg"
-				alt="router"></th>
-		</tr>
-		<tr>
-			<td><center>45000 руб.</center></td>
-			<td><center>18000 руб.</center></td>
-			<td><center>1500 руб.</center></td>
-		</tr>
-		<tr>
-			<td><center><input type="submit" onclick="byingServlet" name="buyTv" value="Купить"></center></td>
-			<td><center><input type="submit" name="buyPhone" value="Купить"></center></td>
-			<td><center><input type="submit" name="buyRouter" value="Купить"></center></td>
-		</tr>
-		<tr>
-			<td><center><button>В корзину</button></center></td>
-			<td><center><button>В корзину</button></center></td>
-			<td><center><button>В корзину</button></center></td>
-		</tr>
-	</table>
+	<form action="" method="post">
+		<table width="500" border="1" cellpadding="3" cellspacing="0">
+			<caption>Список товаров</caption>
+			<tr>
+				<th>
+					<img src="https://pp.vk.me/c836220/v836220617/1e88c/XmWdtOvFV1Q.jpg" alt="tv">
+				</th>
+				<th>
+					<img src="https://pp.vk.me/c836220/v836220617/1e885/o3fCjm6qx9E.jpg" alt="phone">
+				</th>
+				<th>
+					<img src="https://pp.vk.me/c836220/v836220617/1e87e/ewihQtMn2iA.jpg" alt="router">
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<center>45000 руб.</center>
+				</td>
+				<td>
+					<center>18000 руб.</center>
+				</td>
+				<td>
+					<center>1500 руб.</center>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center><input type="submit" name="buyTv" value="Купить"></center>
+				</td>
+				<td>
+					<center><input type="submit" name="buyPhone" value="Купить"></center>
+				</td>
+				<td>
+					<center><input type="submit" name="buyRouter" value="Купить"></center>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center><input type="submit" name="tvToCart" value="В корзину"></center>
+				</td>
+				<td>
+					<center><input type="submit" name="phoneToCart" value="В корзину"></center>
+				</td>
+				<td>
+					<center><input type="submit" name="routerToCart" value="В корзину"></center>
+				</td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>
 
