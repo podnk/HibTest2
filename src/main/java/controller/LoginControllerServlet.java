@@ -42,7 +42,7 @@ public class LoginControllerServlet extends HttpServlet
 		}
 		else 
 		{
-			resp.encodeRedirectURL("wrong.jsp");
+			resp.sendRedirect("wrong.jsp");
 		}
 	}
 }

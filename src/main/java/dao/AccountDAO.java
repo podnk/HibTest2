@@ -34,10 +34,9 @@ public class AccountDAO extends HttpServlet
             
             System.out.println("\n\n Details Added \n");
         }
-        catch (HibernateException e) 
+        catch (Exception ex) 
         {
-            System.out.println(e.getMessage());
-            System.out.println("error");
+            System.out.println(ex);
         }
         finally
         {

@@ -27,9 +27,9 @@
 			<td><center>1500 руб.</center></td>
 		</tr>
 		<tr>
-			<td><center><button>Купить</button></center></td>
-			<td><center><button>Купить</button></center></td>
-			<td><center><button>Купить</button></center></td>
+			<td><center><input type="submit" onclick="byingServlet" name="buyTv" value="Купить"></center></td>
+			<td><center><input type="submit" name="buyPhone" value="Купить"></center></td>
+			<td><center><input type="submit" name="buyRouter" value="Купить"></center></td>
 		</tr>
 		<tr>
 			<td><center><button>В корзину</button></center></td>
